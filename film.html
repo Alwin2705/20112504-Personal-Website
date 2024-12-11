@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Favourite Film</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css">
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <div class="ui menu">
+    <a class="item" href="index.html">Home</a>
+    <a class="item" href="about.html">About Me</a>
+    <a class="item" href="interests.html">Interests</a>
+    <a class="item active" href="film.html">My Favourite Film</a>
+    <a href="song.html" class="item active">My Favourite Album</a>
+    
+  </div>
+
+  <!-- Main Content Grid -->
+  <div class="ui container">
+    <div class="ui grid">
+      <div class="sixteen wide column">
+        <h1 class="ui header">My Favourite Film: Inception</h1>
+        <div class="ui card">
+          <div class="image">
+            <img src="images/inception.jpeg" alt="Inception Movie Poster">
+          </div>
+          <div class="content">
+            <p>Inception is a mind-bending thriller directed by Christopher Nolan. The story revolves around the concept of dream infiltration and the manipulation of subconscious minds.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Table of Movie Details -->
+      <div class="sixteen wide column">
+        <h3 class="ui header">Movie Details</h3>
+        <table class="ui celled table">
+          <thead>
+            <tr><th>Attribute</th><th>Details</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Director</td><td>Christopher Nolan</td></tr>
+            <tr><td>Release Date</td><td>2010-07-16</td></tr>
+            <tr><td>Genre</td><td>Science Fiction</td></tr>
+            <tr><td>Main Actor</td><td>Leonardo DiCaprio</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Form Section -->
+      <div class="sixteen wide column">
+        <h3 class="ui header">Submit Your Favourite Film</h3>
+        <form class="ui form" id="filmForm">
+          <div class="field">
+            <label>Full Name</label>
+           <input type="text" name="namw" id="name" autofocus required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)*"
+              title="Please enter a name (Surname optional) with First Letter capitalised">
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" name="email" id="email" required  pattern = "[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                   title="Please enter a valid email">
+          </div>
+          <div class="field">
+            <label>Favourite Film</label>
+            <input type="text" name="film" id="film" required  pattern = "[A-Z][a-z]+( [A-Z][a-z]+)*"
+                   title="Please enter a valid film">
+          </div>
+          <button class="ui primary button" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+ 
+
+</body>
+</html>
